@@ -23,7 +23,7 @@ app.use(
 
 app.get("/", (request, response) => {
   console.log(request);
-  return response.status(234).send("Welcome to MERN stack tutorial");
+  return response.status(234).send("Welcome to Book");
 });
 
 app.use('/books',booksRoute);
