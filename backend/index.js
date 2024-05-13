@@ -58,7 +58,7 @@ app.use(express.json());
 
 app.use(
       cors({
-        origin:'https://innobyte-mern-book-store-frontend.vercel.app/',
+         origin:'https://innobyte-mern-book-store-frontend.vercel.app',
           methods:['GET','POST','PUT','DELETE'],
           allowedHeaders:['Content-Type'],
       })
