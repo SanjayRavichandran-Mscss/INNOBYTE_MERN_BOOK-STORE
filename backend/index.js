@@ -61,7 +61,9 @@ app.use(
          origin:'https://innobyte-mern-book-store-frontend.vercel.app',
         //  origin:'http://localhost:5173',
           methods:['GET','POST','PUT','DELETE'],
+          credential:true,
           allowedHeaders:['Content-Type'],
+          
       })
   );
 
