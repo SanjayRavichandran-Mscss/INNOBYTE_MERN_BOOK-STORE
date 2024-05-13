@@ -17,7 +17,7 @@ app.use(express.json());
 // Option 2:Allow Custom Origins
 app.use(
     cors({
-        origin:'https://innobyte-mern-book-store-v7tw.vercel.app',
+        origin:'http://localhost:5173',
         methods:['GET','POST','PUT','DELETE'],
         allowedHeaders:['Content-Type'],
     })
