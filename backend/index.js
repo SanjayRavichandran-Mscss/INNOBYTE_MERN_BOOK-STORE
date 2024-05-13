@@ -67,7 +67,7 @@ app.use(
 
   app.get("/", (request, response) => {
   console.log(request);
-  return response.status(234).send("Welcome to Book Store App");
+  return response.status(500).send("Welcome to Book Store App");
 });
 
   app.use('/books',booksRoute);
