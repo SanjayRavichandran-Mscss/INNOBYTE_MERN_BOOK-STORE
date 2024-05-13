@@ -67,14 +67,15 @@ app.use(
 
   app.get("/", (request, response) => {
   console.log(request);
-  return response.status(500).send("Welcome to Book Store App");
+  return response.status(234).send("Welcome to Book Store App");
 });
 
   app.use('/books',booksRoute);
 
 // database connection
 mongoose
-  .connect(process.env.mongoDBURL)
+  // .connect(process.env.mongoDBURL)
+  .connect('mongodb+srv://sanjayravichandran006:SanjaySanjay.@book-store-mern.azmuetj.mongodb.net/books-collection?retryWrites=true&w=majority&appName=Book-Store-MERN')
   .then(() => console.log("DATABASE CONNECTED"))
   .catch((err) => console.log("Database not Connected", err));
 
