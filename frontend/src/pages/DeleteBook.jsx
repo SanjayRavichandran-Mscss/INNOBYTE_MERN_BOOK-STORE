@@ -12,7 +12,7 @@ export const DeleteBook = () => {
   const handleDeleteBook = () =>{
     
     axios 
-        .delete(`http://localhost:5555/books/${id}`)
+        .delete(`http://localhost:5000/books/${id}`)
         .then(()=>{
           enqueueSnackbar('Book deleted successfully',{ variant:'success'})
           navigate('/');

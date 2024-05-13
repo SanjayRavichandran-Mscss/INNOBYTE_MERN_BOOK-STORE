@@ -18,7 +18,7 @@ const EditBook = () => {
     // Fetch book details using the book ID
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5555/books/${id}`);
+        const response = await axios.get(`http://localhost:5000/books/${id}`);
         const { title, author, publishYear } = response.data 
         
         // Set the initial state of the input fields with the book data
