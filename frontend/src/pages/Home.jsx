@@ -11,6 +11,7 @@ const Home = () => {
   useEffect(() => {
   
     axios
+      // .get("http://localhost:5000.app/books")
       .get("https://innobyte-mern-book-store-backend-api.vercel.app/books")
       .then((response) => {
         setbooks(response.data.data);

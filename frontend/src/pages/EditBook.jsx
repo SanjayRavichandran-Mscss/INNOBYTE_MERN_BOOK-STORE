@@ -47,6 +47,7 @@ const EditBook = () => {
     setLoading(true);
 
     try {
+      // await axios.put(`http://localhost:5000/books/${id}`, data);
       await axios.put(`https://innobyte-mern-book-store-backend-api.vercel.app/books/${id}`, data);
       enqueueSnackbar(`Book "${title}" edited successfully`, { variant: 'success' });
       navigate('/');
