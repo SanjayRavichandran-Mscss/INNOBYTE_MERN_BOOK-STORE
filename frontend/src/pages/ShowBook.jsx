@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/books/details/${id}`);
+        const response = await axios.get(`https://innobyte-mern-book-store-backend-82ocrm4r2.vercel.app/books/details/${id}`);
         setBook(response.data);
         setLoading(true);
       } catch (error) {

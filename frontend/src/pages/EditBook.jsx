@@ -18,7 +18,8 @@ const EditBook = () => {
     // Fetch book details using the book ID
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/books/${id}`);
+        // const response = await axios.get(`http://localhost:5000/books/${id}`);
+        const response = await axios.get(`https://innobyte-mern-book-store-backend-82ocrm4r2.vercel.app/books/${id}`);
         const { title, author, publishYear } = response.data 
         
         // Set the initial state of the input fields with the book data
