@@ -19,7 +19,7 @@ const EditBook = () => {
     const fetchBookDetails = async () => {
       try {
         // const response = await axios.get(`http://localhost:5000/books/${id}`);
-        const response = await axios.get(`https://innobyte-mern-book-store-backend-82ocrm4r2.vercel.app/books/${id}`);
+        const response = await axios.get(`https://innobyte-mern-book-store-backend-api.vercel.app/books/${id}`);
         const { title, author, publishYear } = response.data 
         
         // Set the initial state of the input fields with the book data
@@ -47,7 +47,7 @@ const EditBook = () => {
     setLoading(true);
 
     try {
-      await axios.put(`http://localhost:5555/books/${id}`, data);
+      await axios.put(`https://innobyte-mern-book-store-backend-api.vercel.app/books/${id}`, data);
       enqueueSnackbar(`Book "${title}" edited successfully`, { variant: 'success' });
       navigate('/');
     } catch (error) {

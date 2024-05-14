@@ -12,7 +12,7 @@ export const DeleteBook = () => {
   const handleDeleteBook = () =>{
     
     axios 
-        .delete(`https://innobyte-mern-book-store-backend-82ocrm4r2.vercel.app/books/${id}`)
+        .delete(`https://innobyte-mern-book-store-backend-api.vercel.app/books/${id}`)
         .then(()=>{
           enqueueSnackbar('Book deleted successfully',{ variant:'success'})
           navigate('/');
