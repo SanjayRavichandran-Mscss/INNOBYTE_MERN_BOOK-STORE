@@ -72,7 +72,7 @@ app.use(
   console.log(request);
   return response.status(234).send("Welcome to Book Store App");
 });
-
+ app.use("/",booksRoute);
   app.use('/books',booksRoute);
 
 // database connection
@@ -85,7 +85,7 @@ mongoose
 
 
 // app.use("/", require("./routes/booksRoute"));
-// app.use("/",booksRoute);
+
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`server is running on port ${PORT}`));
