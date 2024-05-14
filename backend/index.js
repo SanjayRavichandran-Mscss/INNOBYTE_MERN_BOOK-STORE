@@ -85,7 +85,7 @@ mongoose
 
 
 // app.use("/", require("./routes/booksRoute"));
-app.use("/", booksRoute);
+// app.use("/",booksRoute);
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`server is running on port ${PORT}`));
