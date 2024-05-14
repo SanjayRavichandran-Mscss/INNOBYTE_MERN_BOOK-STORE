@@ -20,7 +20,7 @@ const data = {
 };
 
 axios
-    .post('https://innobyte-mern-book-store-backend-82ocrm4r2.vercel.app/books/create',data)
+    .post('https://innobyte-mern-book-store-backend-82ocrm4r2.vercel.app/books',data)
     .then(()=>{
      enqueueSnackbar('Book Created Successfully',{variant:'success'});
       navigate('/');
